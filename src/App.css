@@ -1,38 +1,43 @@
-.App {
+.stopwatch-time{
+  font-size: 6vw;;
+}
+.stopwatch-time-2{
+  font-size: 2vw;;
+}
+.laps-container {
+  margin-top: 20px;
+}
+
+.laps-table-container {
+  max-height: 235px; /* Adjust height as needed for 5 rows */
+  overflow-y: auto;
+  width: 50%; /* Set width to 50% */
+  margin: 0 auto; /* Center the table container */
+}
+
+.laps-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.laps-table th,
+.laps-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.laps-table th {
+  background-color: #f2f2f2;
+  position: sticky;
+  top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.laps-table tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.laps-table tr:hover {
+  background-color: #ddd;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
